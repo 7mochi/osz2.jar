@@ -1,0 +1,1 @@
+rootProject.name = "osz2.jar"
