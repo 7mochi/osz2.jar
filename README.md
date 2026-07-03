@@ -204,7 +204,7 @@ Maven:
 Gradle:
 ```groovy
 implementation 'io.github.7mochi:osz2:0.0.3'
-``` 
+```
 
 ## Thanks to
 - [Levi](https://github.com/Lekuruu) for creating and maintaining osz2.py and osz2-go.
