@@ -8,7 +8,7 @@ plugins {
     id("com.diffplug.spotless") version "8.2.1"
 }
 
-group = "io.github.nanamochi"
+group = "io.github.7mochi"
 version = "0.0.1"
 
 repositories {
