@@ -1,13 +1,14 @@
 # osz2.jar
 
 [![Java Version](https://img.shields.io/badge/java-25%2B-blue.svg)](https://www.java.com/)
-[![GitHub License](https://img.shields.io/github/license/nanamochi/osz2.jar)](LICENSE)
+[![Sonatype Central](https://maven-badges.sml.io/sonatype-central/io.github.7mochi/osz2/badge.svg)](https://central.sonatype.com/artifact/io.github.7mochi/osz2)
+[![License](https://img.shields.io/badge/license-mit%20license-brightgreen.svg)](https://github.com/7mochi/osz2.jar/blob/master/LICENSE)
 
 osz2.jar is a Java library for reading and writing osz2 files. It's a direct port of the existing [Osz2Decryptor](https://github.com/xxCherry/Osz2Decryptor) project by [xxCherry](https://github.com/xxCherry), [osz2-go](https://github.com/Lekuruu/osz2-go) and [osz2.py](https://github.com/Lekuruu/osz2.py).
 
 This project *won't* provide beatmap parsing support. You will have to implement that by yourself, if you decide to use this library for implementing the beatmap submission system.
 
-## Usage
+## Examples
 
 Here is an example of how to use osz2.jar as a library:
 
@@ -187,14 +188,23 @@ byte[] updatedOsz2 = PatchUtil.applyBsdiffPatch(osz2File, patchFile);
 Package pkg = Package.fromBytes(updatedOsz2);
 ```
 
-## Building
+## Installing osz2.jar
 
-```bash
-./gradlew build
+osz2.jar is available on the Sonatype Central Repository. These can be used without having to compile the project yourself.
+
+Maven:
+```xml
+<dependency>
+    <groupId>io.github.7mochi</groupId>
+    <artifactId>osz2</artifactId>
+    <version>0.0.3</version>
+</dependency>
 ```
 
-Run tests:
+Gradle:
+```groovy
+implementation 'io.github.7mochi:osz2:0.0.3'
+``` 
 
-```bash
-./gradlew test
-```
+## Thanks to
+- [Levi](https://github.com/Lekuruu) for creating and maintaining osz2.py and osz2-go.
