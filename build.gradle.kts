@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "io.github.7mochi"
-version = "0.0.2"
+version = "0.0.3"
 
 repositories {
     mavenCentral()
