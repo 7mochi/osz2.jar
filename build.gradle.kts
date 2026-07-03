@@ -48,6 +48,7 @@ publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             from(components["java"])
+            artifactId = "osz2"
             artifact(generateSourcesJar)
             artifact(generateJavadocJar)
             pom {
